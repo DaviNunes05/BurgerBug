@@ -91,15 +91,6 @@ export default {
                 headers: {"Content-Type": "application/json"},
                 body: dataJson
             });
-
-            const res = await req.json();
-
-            // Mensagem do sistema
-            this.msg = `Pedido Nº ${res.id} foi atualizado para "${res.status}"`;
-
-            setTimeout(() => this.msg = null, 3000)
-
-
         }
     },
     mounted(){
